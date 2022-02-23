@@ -33,7 +33,6 @@ public class Main {
         while(complete == false){
             System.out.println("Guesses Made: "+guessCount+"/7");
             System.out.println("Word: "+ wordGuess);
-            System.out.println("Word: "+ word);
             System.out.println("Guesses: "+ guesses);
             char guess = CLI.readChar("Guess a Letter ");
             for(int i = 0; i<word.length();i++){
