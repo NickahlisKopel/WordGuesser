@@ -5,7 +5,14 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
-   public static String[] words = {"guessing","these","words","is","very","easy"};
+   public static String[] words = {"about", "beginning", "carry",
+           "dance", "early", "false",
+           "glasses", "happy", "issues",
+           "jewels", "knife", "labor",
+           "major", "never", "oceans",
+           "paint", "quick", "radar",
+           "seize", "taste", "under",
+           "value", "wages"};
     public static void main(String[] args) {
 	// write your code here
         menu();
@@ -39,6 +46,8 @@ public class Main {
             if(count == word.length()-1){
 
             }else if (count == word.length()-2){
+
+            }else if (count == word.length()-3){
 
             }else{
                 guessCount++;
