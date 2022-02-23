@@ -8,7 +8,7 @@ public class Main {
    public static String[] words = {"guessing","these","words","is","very","easy"};
     public static void main(String[] args) {
 	// write your code here
-        game();
+        menu();
     }
     public static void game(){
         Random rand = new Random();
@@ -33,13 +33,21 @@ public class Main {
                 }
             }
             guesses.add(Character.toString(guess));
+            guessCount++;
             if(!wordGuess.contains("_")){
                 System.out.println("Complete!");
                 complete = true;
+                menu();
             }
 
         }
 
 
+    }
+    public static void menu(){
+       int selection = CLI.readInt("1)Play\n2)Exit\nSelection",1,2);
+        if(selection == 1){
+            game();
+        }
     }
 }
