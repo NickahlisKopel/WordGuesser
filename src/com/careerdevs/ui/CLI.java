@@ -32,6 +32,7 @@ public class CLI {
 
             try {
                 char inputChar = scanner.next().charAt(0);
+
                 if(inputChar != ' '){
                     return inputChar;
                 }else{

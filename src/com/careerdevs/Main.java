@@ -35,6 +35,9 @@ public class Main {
             System.out.println("Word: "+ wordGuess);
             System.out.println("Guesses: "+ guesses);
             char guess = CLI.readChar("Guess a Letter ");
+            while(guesses.contains(Character.toString(guess))){
+                guess = CLI.readChar("Already Used\nGuess a Letter ");
+            }
             for(int i = 0; i<word.length();i++){
                 if(guess == word.charAt(i)){
                     wordGuess =  wordGuess.substring(0, i) + guess + wordGuess.substring(i+1);
